@@ -171,6 +171,7 @@ if ${CMD_CURL} \
   --write-out %{http_code}:%{time_connect}:%{time_starttransfer}:%{time_total} \
   --output "${DATA_DIR}/${URI_DOMAIN}/archive/${TIMESTAMP}.response.body" \
   --silent \
+  --show-error \
   "${URI}" \
   1> "${DATA_DIR}/${URI_DOMAIN}/archive/${TIMESTAMP}.curl.output" \
   2> "${DATA_DIR}/${URI_DOMAIN}/archive/${TIMESTAMP}.curl.error";
