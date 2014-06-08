@@ -5,6 +5,14 @@ A simple Bash script for monitoring and logging the availability
 of network services. Current status: proof of concept ;-)
 
 
+Requirements
+------------
+
+ + Bash
+ + CURL
+ + Cron
+
+
 
 Installation
 ------------
@@ -18,5 +26,5 @@ cp /etc/slacheck/slacheck-http-cron-dist /etc/cron.d/slacheck-http-cron
 ~~~~
 
 
-Now edit `slacheck-http-cron` and restart `crond`.
+Now edit `/etc/cron.d/slacheck-http-cron` and restart `crond`.
 
