@@ -1,0 +1,4 @@
+
+#
+# Example for monitoring http://127.0.0.1/
+* * * * * /etc/slacheck/slacheck-http.sh http://127.0.0.1/ 1> /dev/null 2>/dev/null
